@@ -1,0 +1,493 @@
+
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+/* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body{
+	background: #f7f7f7;
+	color: #545454;
+}
+
+.navbar{
+	width: 100%;
+	height: 60px;
+	background: #090f1b;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 25px;
+	/* z-index: -1; */
+}
+
+.navbar .inner_navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar .hamburger{
+	display: none;
+}
+
+.navbar .logo a{
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.navbar .logo a span{
+	color: #FAD0C9FF;
+}
+
+.navbar .menu ul{
+	display: flex;
+}
+
+.navbar .menu ul li a{
+	width: 120px;
+	margin-right: 10px;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: all 0.2s ease;
+}
+
+.navbar .menu ul li:last-child a{
+	margin-right: 0;	
+}
+
+.navbar .menu ul li a:hover,
+.navbar .menu ul li a.active{
+	color: #090f1b;
+	background: #FAD0C9FF;
+}
+
+.main_container{
+	margin-top: 60px;
+	padding: 25px;
+}
+
+.main_container .content{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.main_container .content .item_wrap{
+	width: 50%;
+	padding: 10px;
+}
+
+.main_container .content .item_wrap .item{
+	padding: 25px;
+	background: #fff;
+	line-height: 22px;
+}
+
+@media (max-width: 992px){
+	.navbar{
+		height: 100px;
+		padding: 12px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: column;
+	}
+	.main_container{
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 728px){
+	.navbar{
+		height: 60px;
+	}
+	.navbar .inner_navbar{
+		flex-direction: row;
+	}
+	.main_container{
+		margin-top: 60px;
+	}
+	.navbar .menu ul{
+		position: absolute;
+		top: 60px;
+		left: 0;
+		display: block;
+		background: #090f1b;
+		width: 100%;
+	}
+	.navbar .menu ul li{
+		padding: 10px;
+	}
+	.navbar .menu ul li a{
+		width: 100%;
+		padding: 12px;
+	}
+	.navbar .hamburger{
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 25px;
+		font-size: 24px;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+	.navbar .hamburger:hover{
+		color: #FAD0C9FF;
+	}
+	.navbar .menu{
+		display: none;
+	}
+	.navbar .menu.active{
+		display: block;
+	}
+	.main_container .content .item_wrap{
+		width: 100%;
+	}
+}
+
+
+  
+/* IMAGE WITH TEXT */
+
+  img {
+	/* border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px; */
+	width: 100%;
+	max-width: 100%;
+    height: 600px;
+	z-index: -1;
+	/* opacity: 0.8; */
+  }
+
+  header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	text-align: center;
+	font-size: 25px;
+  }
+
+  input[type=submit],[type=file] {
+	background-color: #FAD0C9FF;
+	border: solid;
+	color: black;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 2px;
+	
+  }
+
+  input[type=submit]:hover {
+	background-color: black;
+	color: white;
+	padding-right: 40px;
+  	padding-left:20px;
+	transition: .5s;
+  }
+  input[type=file]:hover {
+	background-color: black;
+	color: white;
+	padding-right: 40px;
+  	padding-left:20px;
+	transition: .5s;
+  }
+
+  .main{
+
+	margin: 2%;
+   }
+   
+   h1{
+	   text-align: center;
+	   padding-top: 20px;
+	   color:black;
+	   box-shadow: black;
+   }
+   .card{
+		width: 25%;
+		display: inline-block;
+		box-shadow: 2px 2px 20px black;
+		border-radius: 5px; 
+		margin: 4%;
+	   }
+   
+   .image img{
+	 width: 100%;
+	 height: 50%;
+	 border-top-right-radius: 5px;
+	 border-top-left-radius: 5px;
+	}
+   
+   .title{
+	 text-align: center;
+	 background-color: white;
+	 padding: 10px;
+	 color: black;
+	}
+   
+   .des{
+	padding-top: 30px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: white;
+   }
+
+   .des a{
+	 /* margin-top: 40px;
+	 margin-bottom: 10px;
+	 background-color: #FAD0C9FF;
+	 border: 1px solid black;
+	 border-radius: 5px;
+	 padding:10px; */
+
+	background-color: #FAD0C9FF ;
+	color: black;
+	margin-top: 10px;
+	padding: 7px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 13px;
+   }
+
+   .des a:hover{
+	 background-color: black;
+	 color: white;
+	 transition: .5s;
+	 cursor: pointer;
+	 padding-right: 15px;
+  	padding-left: 15px;
+   }
+  
+   
+
+/* Some good colours */
+/* #FAD0C9FF */
+/* #6E6E6DFF */
+
+/* #E69A8DFF */
+
+footer{
+
+	bottom: 0;
+}
+
+@media (max-height:800px){
+
+	/* header { padding-top:40px; } */
+}
+
+
+.footer-distributed{
+	background-color: #090f1b;
+
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+	color: #FAD0C9FF;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+	color: #FAD0C9FF;
+}
+
+.footer-distributed h3{
+	/* color:  #ffffff; */
+	font: normal 36px;
+	margin: 0;
+	color:white;
+	font-size: 36px;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+	
+}
+
+.footer-distributed h3 span{
+	color: #FAD0C9FF;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #FAD0C9FF;
+	margin: 20px 0 12px;
+	font-size: 20px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 14px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 14px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	font-size:14px;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color: white;;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+ .footer-distributed .footer-right{
+	width: 30%;
+	color: #FAD0C9FF;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	/* font-weight: bold; */
+	margin-bottom: 20px;
+}
+
+/* .footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}  */
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+  
+
+
+/* Some good colours */
+/* #FAD0C9FF */
+/* #6E6E6DFF */
+
+/* #E69A8DFF */
+body{
+    background-image: url("IMAGES/plaster-bg.jpg");;
+}
